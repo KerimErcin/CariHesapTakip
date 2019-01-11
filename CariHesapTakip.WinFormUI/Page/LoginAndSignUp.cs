@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CariHesapTakip.WinFormUI
+namespace CariHesapTakip.WinFormUI.Page
 {
-    public partial class Start : Form
+    public partial class LoginAndSignUp : UserControl
     {
-        public Start()
+        public LoginAndSignUp()
         {
             InitializeComponent();
         }

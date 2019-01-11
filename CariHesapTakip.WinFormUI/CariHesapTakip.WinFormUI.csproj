@@ -51,16 +51,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Start.cs">
+    <Compile Include="Page\LoginAndSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\LoginAndSignUp.Designer.cs">
+      <DependentUpon>LoginAndSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\StartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Start.Designer.cs">
-      <DependentUpon>Start.cs</DependentUpon>
+    <Compile Include="ContainerForm.Designer.cs">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Start.resx">
-      <DependentUpon>Start.cs</DependentUpon>
+    <EmbeddedResource Include="Page\LoginAndSignUp.resx">
+      <DependentUpon>LoginAndSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerForm.resx">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,8 +102,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Page\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
