@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\FirmaBilgileriManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CariHesapTakip.DataAccsess\CariHesapTakip.DataAccsess.csproj">
+      <Project>{3C2DD0B1-EE9A-4794-B6F1-26DF3EB57331}</Project>
+      <Name>CariHesapTakip.DataAccsess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CariHesapTakip.Entities\CariHesapTakip.Entities.csproj">
+      <Project>{B543B4DF-59C6-462F-BEE4-0BFEBEB3D074}</Project>
+      <Name>CariHesapTakip.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
