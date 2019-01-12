@@ -16,7 +16,7 @@ namespace CariHesapTakip.WinFormUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ContainerForm());
+            Application.Run(new ContainerApp());
         }
     }
 }

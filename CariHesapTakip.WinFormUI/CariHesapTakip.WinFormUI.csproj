@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\ContainerApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ContainerApp.Designer.cs">
+      <DependentUpon>ContainerApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page\LoginAndSignUp.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\ContainerApp.resx">
+      <DependentUpon>ContainerApp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page\LoginAndSignUp.resx">
       <DependentUpon>LoginAndSignUp.cs</DependentUpon>
     </EmbeddedResource>
