@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContainerApp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlIndıcator = new System.Windows.Forms.Panel();
+            this.btnSettings = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnMenu = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMenu = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSettings = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pnlIndıcator = new System.Windows.Forms.Panel();
             this.anmMenu = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,96 +63,15 @@
             this.pnlMenu.Size = new System.Drawing.Size(52, 767);
             this.pnlMenu.TabIndex = 0;
             // 
-            // pnlHeader
+            // pnlIndıcator
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.White;
-            this.anmMenu.SetDecoration(this.pnlHeader, BunifuAnimatorNS.DecorationType.None);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(52, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1347, 43);
-            this.pnlHeader.TabIndex = 1;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.pnlHeader;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Activecolor = System.Drawing.Color.White;
-            this.btnHome.BackColor = System.Drawing.Color.White;
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHome.BorderRadius = 0;
-            this.btnHome.ButtonText = "        Anasayfa";
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmMenu.SetDecoration(this.btnHome, BunifuAnimatorNS.DecorationType.None);
-            this.btnHome.DisabledColor = System.Drawing.Color.Gray;
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnHome.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnHome.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHome.Iconimage")));
-            this.btnHome.Iconimage_right = null;
-            this.btnHome.Iconimage_right_Selected = null;
-            this.btnHome.Iconimage_Selected = null;
-            this.btnHome.IconMarginLeft = 0;
-            this.btnHome.IconMarginRight = 0;
-            this.btnHome.IconRightVisible = true;
-            this.btnHome.IconRightZoom = 0D;
-            this.btnHome.IconVisible = true;
-            this.btnHome.IconZoom = 60D;
-            this.btnHome.IsTab = false;
-            this.btnHome.Location = new System.Drawing.Point(0, 87);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Normalcolor = System.Drawing.Color.White;
-            this.btnHome.OnHovercolor = System.Drawing.Color.White;
-            this.btnHome.OnHoverTextColor = System.Drawing.Color.DimGray;
-            this.btnHome.selected = false;
-            this.btnHome.Size = new System.Drawing.Size(208, 48);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "        Anasayfa";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Textcolor = System.Drawing.Color.DimGray;
-            this.btnHome.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Activecolor = System.Drawing.Color.White;
-            this.btnMenu.BackColor = System.Drawing.Color.White;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.BorderRadius = 0;
-            this.btnMenu.ButtonText = "           Menü";
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmMenu.SetDecoration(this.btnMenu, BunifuAnimatorNS.DecorationType.None);
-            this.btnMenu.DisabledColor = System.Drawing.Color.Gray;
-            this.btnMenu.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnMenu.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMenu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMenu.Iconimage")));
-            this.btnMenu.Iconimage_right = null;
-            this.btnMenu.Iconimage_right_Selected = null;
-            this.btnMenu.Iconimage_Selected = null;
-            this.btnMenu.IconMarginLeft = 0;
-            this.btnMenu.IconMarginRight = 0;
-            this.btnMenu.IconRightVisible = true;
-            this.btnMenu.IconRightZoom = 0D;
-            this.btnMenu.IconVisible = true;
-            this.btnMenu.IconZoom = 60D;
-            this.btnMenu.IsTab = false;
-            this.btnMenu.Location = new System.Drawing.Point(0, 3);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Normalcolor = System.Drawing.Color.White;
-            this.btnMenu.OnHovercolor = System.Drawing.Color.White;
-            this.btnMenu.OnHoverTextColor = System.Drawing.Color.DimGray;
-            this.btnMenu.selected = false;
-            this.btnMenu.Size = new System.Drawing.Size(208, 48);
-            this.btnMenu.TabIndex = 3;
-            this.btnMenu.Text = "           Menü";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Textcolor = System.Drawing.Color.DimGray;
-            this.btnMenu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.pnlIndıcator.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pnlIndıcator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
+            this.anmMenu.SetDecoration(this.pnlIndıcator, BunifuAnimatorNS.DecorationType.None);
+            this.pnlIndıcator.Location = new System.Drawing.Point(45, 87);
+            this.pnlIndıcator.Name = "pnlIndıcator";
+            this.pnlIndıcator.Size = new System.Drawing.Size(7, 48);
+            this.pnlIndıcator.TabIndex = 2;
             // 
             // btnSettings
             // 
@@ -190,42 +110,133 @@
             this.btnSettings.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // pnlIndıcator
+            // btnMenu
             // 
-            this.pnlIndıcator.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pnlIndıcator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            this.anmMenu.SetDecoration(this.pnlIndıcator, BunifuAnimatorNS.DecorationType.None);
-            this.pnlIndıcator.Location = new System.Drawing.Point(45, 87);
-            this.pnlIndıcator.Name = "pnlIndıcator";
-            this.pnlIndıcator.Size = new System.Drawing.Size(7, 48);
-            this.pnlIndıcator.TabIndex = 2;
+            this.btnMenu.Activecolor = System.Drawing.Color.White;
+            this.btnMenu.BackColor = System.Drawing.Color.White;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.BorderRadius = 0;
+            this.btnMenu.ButtonText = "        Menü";
+            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmMenu.SetDecoration(this.btnMenu, BunifuAnimatorNS.DecorationType.None);
+            this.btnMenu.DisabledColor = System.Drawing.Color.Gray;
+            this.btnMenu.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btnMenu.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnMenu.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMenu.Iconimage")));
+            this.btnMenu.Iconimage_right = null;
+            this.btnMenu.Iconimage_right_Selected = null;
+            this.btnMenu.Iconimage_Selected = null;
+            this.btnMenu.IconMarginLeft = 0;
+            this.btnMenu.IconMarginRight = 0;
+            this.btnMenu.IconRightVisible = true;
+            this.btnMenu.IconRightZoom = 0D;
+            this.btnMenu.IconVisible = true;
+            this.btnMenu.IconZoom = 60D;
+            this.btnMenu.IsTab = false;
+            this.btnMenu.Location = new System.Drawing.Point(0, 3);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Normalcolor = System.Drawing.Color.White;
+            this.btnMenu.OnHovercolor = System.Drawing.Color.White;
+            this.btnMenu.OnHoverTextColor = System.Drawing.Color.DimGray;
+            this.btnMenu.selected = false;
+            this.btnMenu.Size = new System.Drawing.Size(208, 48);
+            this.btnMenu.TabIndex = 3;
+            this.btnMenu.Text = "        Menü";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenu.Textcolor = System.Drawing.Color.DimGray;
+            this.btnMenu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Activecolor = System.Drawing.Color.White;
+            this.btnHome.BackColor = System.Drawing.Color.White;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.BorderRadius = 0;
+            this.btnHome.ButtonText = "        Anasayfa";
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmMenu.SetDecoration(this.btnHome, BunifuAnimatorNS.DecorationType.None);
+            this.btnHome.DisabledColor = System.Drawing.Color.Gray;
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btnHome.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnHome.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHome.Iconimage")));
+            this.btnHome.Iconimage_right = null;
+            this.btnHome.Iconimage_right_Selected = null;
+            this.btnHome.Iconimage_Selected = null;
+            this.btnHome.IconMarginLeft = 0;
+            this.btnHome.IconMarginRight = 0;
+            this.btnHome.IconRightVisible = true;
+            this.btnHome.IconRightZoom = 0D;
+            this.btnHome.IconVisible = true;
+            this.btnHome.IconZoom = 60D;
+            this.btnHome.IsTab = false;
+            this.btnHome.Location = new System.Drawing.Point(0, 87);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Normalcolor = System.Drawing.Color.White;
+            this.btnHome.OnHovercolor = System.Drawing.Color.White;
+            this.btnHome.OnHoverTextColor = System.Drawing.Color.DimGray;
+            this.btnHome.selected = false;
+            this.btnHome.Size = new System.Drawing.Size(208, 48);
+            this.btnHome.TabIndex = 2;
+            this.btnHome.Text = "        Anasayfa";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Textcolor = System.Drawing.Color.DimGray;
+            this.btnHome.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // pnlHeader
+            // 
+            this.pnlHeader.BackColor = System.Drawing.Color.White;
+            this.anmMenu.SetDecoration(this.pnlHeader, BunifuAnimatorNS.DecorationType.None);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(52, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(1347, 43);
+            this.pnlHeader.TabIndex = 1;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.pnlHeader;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // anmMenu
             // 
             this.anmMenu.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.anmMenu.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.anmMenu.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.anmMenu.DefaultAnimation = animation1;
+            // 
+            // pnlContainer
+            // 
+            this.anmMenu.SetDecoration(this.pnlContainer, BunifuAnimatorNS.DecorationType.None);
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContainer.Location = new System.Drawing.Point(52, 43);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1347, 724);
+            this.pnlContainer.TabIndex = 2;
             // 
             // ContainerApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1399, 767);
+            this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlMenu);
             this.anmMenu.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -250,5 +261,6 @@
         private System.Windows.Forms.Panel pnlIndıcator;
         private Bunifu.Framework.UI.BunifuFlatButton btnSettings;
         private BunifuAnimatorNS.BunifuTransition anmMenu;
+        private System.Windows.Forms.Panel pnlContainer;
     }
 }

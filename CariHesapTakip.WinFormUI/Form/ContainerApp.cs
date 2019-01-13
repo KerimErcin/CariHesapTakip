@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CariHesapTakip.WinFormUI.Page;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,16 @@ namespace CariHesapTakip.WinFormUI
         public ContainerApp()
         {
             InitializeComponent();
+
         }
+
+        HomePage homePage = new HomePage();
 
         private void ContainerApp_Load(object sender, EventArgs e)
         {
+            //Load İşlemi
             SelectIndicator(btnHome);
+            pnlContainer.Controls.Add(homePage);
         }
 
         public void SelectIndicator(object sender)
