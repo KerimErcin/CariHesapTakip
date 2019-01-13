@@ -29,25 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pnl2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pnl3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pnl4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pnlExchanceRate = new System.Windows.Forms.Panel();
+            this.dtPicker = new Bunifu.Framework.UI.BunifuDatepicker();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlUsd = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lblUsd = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlEuro = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lblEuro = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bgWorkerChar = new System.ComponentModel.BackgroundWorker();
+            this.ch1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pnlChar = new System.Windows.Forms.Panel();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlExchanceRate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUsd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlEuro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ch1)).BeginInit();
+            this.pnlChar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl1
@@ -109,7 +122,7 @@
             // pnlExchanceRate
             // 
             this.pnlExchanceRate.BackColor = System.Drawing.Color.White;
-            this.pnlExchanceRate.Controls.Add(this.bunifuDatepicker1);
+            this.pnlExchanceRate.Controls.Add(this.dtPicker);
             this.pnlExchanceRate.Controls.Add(this.panel2);
             this.pnlExchanceRate.Controls.Add(this.pnlUsd);
             this.pnlExchanceRate.Controls.Add(this.pnlEuro);
@@ -119,6 +132,20 @@
             this.pnlExchanceRate.Size = new System.Drawing.Size(252, 234);
             this.pnlExchanceRate.TabIndex = 1;
             // 
+            // dtPicker
+            // 
+            this.dtPicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
+            this.dtPicker.BorderRadius = 10;
+            this.dtPicker.ForeColor = System.Drawing.Color.White;
+            this.dtPicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtPicker.FormatCustom = null;
+            this.dtPicker.Location = new System.Drawing.Point(11, 181);
+            this.dtPicker.Name = "dtPicker";
+            this.dtPicker.Size = new System.Drawing.Size(229, 43);
+            this.dtPicker.TabIndex = 2;
+            this.dtPicker.Value = new System.DateTime(2019, 1, 13, 16, 21, 19, 0);
+            this.dtPicker.onValueChanged += new System.EventHandler(this.dtPicker_onValueChanged);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
@@ -126,6 +153,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(11, 40);
             this.panel2.TabIndex = 2;
+            // 
+            // pnlUsd
+            // 
+            this.pnlUsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlUsd.BackgroundImage")));
+            this.pnlUsd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlUsd.Controls.Add(this.lblUsd);
+            this.pnlUsd.Controls.Add(this.pictureBox1);
+            this.pnlUsd.GradientBottomLeft = System.Drawing.Color.SpringGreen;
+            this.pnlUsd.GradientBottomRight = System.Drawing.SystemColors.HotTrack;
+            this.pnlUsd.GradientTopLeft = System.Drawing.Color.SpringGreen;
+            this.pnlUsd.GradientTopRight = System.Drawing.Color.CornflowerBlue;
+            this.pnlUsd.Location = new System.Drawing.Point(11, 55);
+            this.pnlUsd.Name = "pnlUsd";
+            this.pnlUsd.Quality = 10;
+            this.pnlUsd.Size = new System.Drawing.Size(229, 55);
+            this.pnlUsd.TabIndex = 0;
+            // 
+            // lblUsd
+            // 
+            this.lblUsd.AutoSize = true;
+            this.lblUsd.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsd.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUsd.ForeColor = System.Drawing.Color.White;
+            this.lblUsd.Location = new System.Drawing.Point(86, 9);
+            this.lblUsd.Name = "lblUsd";
+            this.lblUsd.Size = new System.Drawing.Size(78, 37);
+            this.lblUsd.TabIndex = 5;
+            this.lblUsd.Text = "3,14";
             // 
             // pictureBox1
             // 
@@ -138,27 +193,11 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlUsd
-            // 
-            this.pnlUsd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlUsd.BackgroundImage")));
-            this.pnlUsd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlUsd.Controls.Add(this.bunifuCustomLabel1);
-            this.pnlUsd.Controls.Add(this.pictureBox1);
-            this.pnlUsd.GradientBottomLeft = System.Drawing.Color.SpringGreen;
-            this.pnlUsd.GradientBottomRight = System.Drawing.SystemColors.HotTrack;
-            this.pnlUsd.GradientTopLeft = System.Drawing.Color.SpringGreen;
-            this.pnlUsd.GradientTopRight = System.Drawing.Color.CornflowerBlue;
-            this.pnlUsd.Location = new System.Drawing.Point(11, 55);
-            this.pnlUsd.Name = "pnlUsd";
-            this.pnlUsd.Quality = 10;
-            this.pnlUsd.Size = new System.Drawing.Size(229, 55);
-            this.pnlUsd.TabIndex = 0;
-            // 
             // pnlEuro
             // 
             this.pnlEuro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlEuro.BackgroundImage")));
             this.pnlEuro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlEuro.Controls.Add(this.bunifuCustomLabel2);
+            this.pnlEuro.Controls.Add(this.lblEuro);
             this.pnlEuro.Controls.Add(this.pictureBox2);
             this.pnlEuro.GradientBottomLeft = System.Drawing.Color.Violet;
             this.pnlEuro.GradientBottomRight = System.Drawing.SystemColors.InactiveBorder;
@@ -169,6 +208,18 @@
             this.pnlEuro.Quality = 10;
             this.pnlEuro.Size = new System.Drawing.Size(229, 55);
             this.pnlEuro.TabIndex = 0;
+            // 
+            // lblEuro
+            // 
+            this.lblEuro.AutoSize = true;
+            this.lblEuro.BackColor = System.Drawing.Color.Transparent;
+            this.lblEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEuro.ForeColor = System.Drawing.Color.White;
+            this.lblEuro.Location = new System.Drawing.Point(86, 9);
+            this.lblEuro.Name = "lblEuro";
+            this.lblEuro.Size = new System.Drawing.Size(78, 37);
+            this.lblEuro.TabIndex = 5;
+            this.lblEuro.Text = "3,14";
             // 
             // pictureBox2
             // 
@@ -191,47 +242,81 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Güncel Kur Bilgileri";
             // 
-            // bunifuDatepicker1
+            // bgWorkerChar
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            this.bunifuDatepicker1.BorderRadius = 10;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(11, 181);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(229, 43);
-            this.bunifuDatepicker1.TabIndex = 2;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 1, 13, 16, 21, 19, 0);
+            this.bgWorkerChar.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorkerChar_DoWork);
             // 
-            // bunifuCustomLabel1
+            // ch1
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(86, 9);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(78, 37);
-            this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "3,14";
+            chartArea1.Name = "ChartArea1";
+            this.ch1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ch1.Legends.Add(legend1);
+            this.ch1.Location = new System.Drawing.Point(0, 0);
+            this.ch1.Name = "ch1";
+            series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
+            series1.BackSecondaryColor = System.Drawing.Color.DeepSkyBlue;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Turquoise;
+            series1.Legend = "Legend1";
+            series1.MarkerBorderColor = System.Drawing.Color.Red;
+            series1.MarkerBorderWidth = 50;
+            series1.Name = "Gelir";
+            series1.ShadowColor = System.Drawing.Color.Maroon;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Gider";
+            this.ch1.Series.Add(series1);
+            this.ch1.Series.Add(series2);
+            this.ch1.Size = new System.Drawing.Size(726, 234);
+            this.ch1.TabIndex = 2;
+            this.ch1.Text = "chart1";
+            this.ch1.Click += new System.EventHandler(this.ch1_Click);
             // 
-            // bunifuCustomLabel2
+            // pnlChar
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(86, 9);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(78, 37);
-            this.bunifuCustomLabel2.TabIndex = 5;
-            this.bunifuCustomLabel2.Text = "3,14";
+            this.pnlChar.BackColor = System.Drawing.Color.White;
+            this.pnlChar.Controls.Add(this.ch1);
+            this.pnlChar.Location = new System.Drawing.Point(560, 19);
+            this.pnlChar.Name = "pnlChar";
+            this.pnlChar.Size = new System.Drawing.Size(729, 234);
+            this.pnlChar.TabIndex = 3;
+            this.pnlChar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChar_Paint);
+            // 
+            // bunifuCustomDataGrid1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(280, 270);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1009, 436);
+            this.bunifuCustomDataGrid1.TabIndex = 4;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.pnlChar);
             this.Controls.Add(this.pnlExchanceRate);
             this.Controls.Add(this.pnl4);
             this.Controls.Add(this.pnl3);
@@ -242,12 +327,15 @@
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.pnlExchanceRate.ResumeLayout(false);
             this.pnlExchanceRate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUsd.ResumeLayout(false);
             this.pnlUsd.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlEuro.ResumeLayout(false);
             this.pnlEuro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ch1)).EndInit();
+            this.pnlChar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,8 +353,12 @@
         private Bunifu.Framework.UI.BunifuGradientPanel pnlEuro;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuDatepicker dtPicker;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblUsd;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblEuro;
+        private System.ComponentModel.BackgroundWorker bgWorkerChar;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ch1;
+        private System.Windows.Forms.Panel pnlChar;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
     }
 }

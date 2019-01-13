@@ -33,10 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BunifuDataViz 1.0.1">
+      <HintPath>..\..\BunifuDataViz 1.0.1.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -53,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlClass\ControlAndSettings.cs" />
     <Compile Include="Form\ContainerApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +116,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,6 +130,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CariHesapTakip.Business\CariHesapTakip.Business.csproj">
+      <Project>{3EF54D4E-797C-4F9D-985A-C0D052542634}</Project>
+      <Name>CariHesapTakip.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CariHesapTakip.Entities\CariHesapTakip.Entities.csproj">
+      <Project>{B543B4DF-59C6-462F-BEE4-0BFEBEB3D074}</Project>
+      <Name>CariHesapTakip.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
