@@ -38,7 +38,7 @@ namespace CariHesapTakip.WinFormUI.Page
             lblUsd.Text = _controlAndSettings.ExchanceUSD();
             lblEuro.Text = _controlAndSettings.ExchanceEuro();
             bgWorkerChar.RunWorkerAsync();
-            firmaBilgileriManager.GetAl();
+            bunifuCustomDataGrid1.DataSource = firmaBilgileriManager.GetAll();
         }
 
         private void dtPicker_onValueChanged(object sender, EventArgs e)

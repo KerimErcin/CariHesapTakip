@@ -11,7 +11,7 @@ namespace CariHesapTakip.Business.Concrete
     public class FirmaBilgileriManager
     {
         FirmaBilgileriDal _firmaBilgileriDal = new FirmaBilgileriDal();
-        public List<FirmaBilgileri> GetAl()
+        public List<FirmaBilgileri> GetAll()
         {
             return _firmaBilgileriDal.GetAll();
         }

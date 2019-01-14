@@ -67,5 +67,10 @@ namespace CariHesapTakip.WinFormUI
             //Ayarlar Penceresi
             SelectIndicator(sender);
         }
+
+        private void pnlContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
