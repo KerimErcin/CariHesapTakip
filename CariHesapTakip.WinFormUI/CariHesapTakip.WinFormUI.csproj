@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
     <Reference Include="BunifuDataViz 1.0.1">
       <HintPath>..\..\BunifuDataViz 1.0.1.dll</HintPath>
     </Reference>
@@ -68,6 +71,12 @@
   <ItemGroup>
     <Compile Include="ControlClass\ControlAndSettings.cs" />
     <Compile Include="ControlClass\DgwDesing.cs" />
+    <Compile Include="Form\ExcaptionMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ExcaptionMail.Designer.cs">
+      <DependentUpon>ExcaptionMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\ContainerApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +111,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form\ContainerApp.resx">
       <DependentUpon>ContainerApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ExcaptionMail.resx">
+      <DependentUpon>ExcaptionMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

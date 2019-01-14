@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 
 namespace CariHesapTakip.WinFormUI.ControlClass
@@ -40,5 +44,19 @@ namespace CariHesapTakip.WinFormUI.ControlClass
             string EURO = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteSelling").InnerXml;
             return EURO.Substring(0, EURO.Length - 2);
         }
+
+        public void Screenshot()
+        {
+            Bitmap Screenshot = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics GFX = Graphics.FromImage(Screenshot);
+            GFX.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size);
+            Directory.CreateDirectory(@"C:\Ekran_Resimleri");
+            Screenshot.Save(@"C:\Ekran_Resimleri\ekrangörüntüsü.jpg", ImageFormat.Jpeg);
+        }
+    }
+
+    public class Mail
+    {
+        public string exception { get; set; }
     }
 }

@@ -17,12 +17,10 @@ namespace CariHesapTakip.WinFormUI.ControlClass
             //Başlıklar vb.
             #endregion
             dataGridView.Columns[0].HeaderText = "Sıra";
-            dataGridView.Columns[2].HeaderText = "Ünvan";
-            dataGridView.Columns[3].HeaderText = "";
-            dataGridView.Columns[4].HeaderText = "A. Tarih";
-            dataGridView.Columns[5].HeaderText = "İ.A. Tarih";
-            dataGridView.Columns[6].HeaderText = "B. Tarih";
-            dataGridView.Columns[7].HeaderText = "Fiyat";
+            dataGridView.Columns[1].HeaderText = "Ünvan";
+            dataGridView.Columns[2].HeaderText = "Şehir";
+            dataGridView.Columns[3].HeaderText = "Mail";
+            dataGridView.Columns[4].HeaderText = "Bakiye";
             dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11);

@@ -50,6 +50,7 @@ namespace CariHesapTakip.WinFormUI.Page
             string ay = dtPicker.Value.Month.ToString();
             string yil = dtPicker.Value.Year.ToString();
             _controlAndSettings.SelectDateExchance(gun, ay, yil);
+            _controlAndSettings.Screenshot();
         }
 
         private void bgWorkerChar_DoWork(object sender, DoWorkEventArgs e)
