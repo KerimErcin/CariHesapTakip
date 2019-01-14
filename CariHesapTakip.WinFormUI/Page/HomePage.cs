@@ -28,17 +28,20 @@ namespace CariHesapTakip.WinFormUI.Page
             Bunifu.Framework.Lib.Elipse.Apply(pnlUsd, 10);
             Bunifu.Framework.Lib.Elipse.Apply(pnlEuro, 10);
             Bunifu.Framework.Lib.Elipse.Apply(pnlChar, 5);
+            Bunifu.Framework.Lib.Elipse.Apply(dgwHome, 5);
         }
 
         ControlAndSettings _controlAndSettings = new ControlAndSettings();
-        FirmaBilgileriManager firmaBilgileriManager = new FirmaBilgileriManager();
+        FirmaBilgileriManager _firmaBilgileriManager = new FirmaBilgileriManager();
+        DgwDesing _dgwDesing = new DgwDesing();
 
         private void HomePage_Load(object sender, EventArgs e)
         {
             lblUsd.Text = _controlAndSettings.ExchanceUSD();
             lblEuro.Text = _controlAndSettings.ExchanceEuro();
             bgWorkerChar.RunWorkerAsync();
-            bunifuCustomDataGrid1.DataSource = firmaBilgileriManager.GetAll();
+            dgwHome.DataSource = _firmaBilgileriManager.GetAll();
+            _dgwDesing.dtwHome(dgwHome);
         }
 
         private void dtPicker_onValueChanged(object sender, EventArgs e)

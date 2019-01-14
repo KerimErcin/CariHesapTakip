@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControlClass\ControlAndSettings.cs" />
+    <Compile Include="ControlClass\DgwDesing.cs" />
     <Compile Include="Form\ContainerApp.cs">
       <SubType>Form</SubType>
     </Compile>
