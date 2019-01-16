@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CompanyCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CompanyCard.Designer.cs">
+      <DependentUpon>CompanyCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlClass\ControlAndSettings.cs" />
     <Compile Include="ControlClass\DgwDesing.cs" />
     <Compile Include="Form\ExcaptionMail.cs">
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="Form\ContainerApp.Designer.cs">
       <DependentUpon>ContainerApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\CompanyPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\CompanyPage.Designer.cs">
+      <DependentUpon>CompanyPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Page\HomePage.cs">
       <SubType>UserControl</SubType>
@@ -109,11 +121,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\CompanyCard.resx">
+      <DependentUpon>CompanyCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\ContainerApp.resx">
       <DependentUpon>ContainerApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\ExcaptionMail.resx">
       <DependentUpon>ExcaptionMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\CompanyPage.resx">
+      <DependentUpon>CompanyPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -159,9 +177,6 @@
       <Project>{B543B4DF-59C6-462F-BEE4-0BFEBEB3D074}</Project>
       <Name>CariHesapTakip.Entities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

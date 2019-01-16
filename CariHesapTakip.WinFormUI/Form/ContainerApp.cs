@@ -20,6 +20,7 @@ namespace CariHesapTakip.WinFormUI
         }
 
         HomePage homePage = new HomePage();
+        CompanyPage companyPage = new CompanyPage();
 
         private void ContainerApp_Load(object sender, EventArgs e)
         {
@@ -36,13 +37,16 @@ namespace CariHesapTakip.WinFormUI
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
+
             MenuHideAndShow(pnlMenu.Width);
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnCompany_Click(object sender, EventArgs e)
         {
-            //Anasayfa
+            //Şirket
             SelectIndicator(sender);
+            pnlContainer.Controls.Clear();
+            pnlContainer.Controls.Add(companyPage);
         }
 
         public void MenuHideAndShow(int width)
@@ -68,9 +72,12 @@ namespace CariHesapTakip.WinFormUI
             SelectIndicator(sender);
         }
 
-        private void pnlContainer_Paint(object sender, PaintEventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
-
+            //Anasayfa
+            SelectIndicator(sender);
+            pnlContainer.Controls.Clear();
+            pnlContainer.Controls.Add(homePage);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace CariHesapTakip.Entities.Concrete
         public string FirmaIlce { get; set; }
         public string FirmaVergiDairesi { get; set; }
         public int FirmaVergiNumarasi { get; set; }
-        public decimal FirmaBorcLimiti { get; set; }
+        public int FirmaBorcLimiti { get; set; }
         public string FirmaParaBirimi { get; set; }
     }
 }

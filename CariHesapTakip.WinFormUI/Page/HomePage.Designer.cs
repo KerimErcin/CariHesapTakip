@@ -38,9 +38,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnl2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnl3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnl4 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnlExchanceRate = new System.Windows.Forms.Panel();
             this.dtPicker = new Bunifu.Framework.UI.BunifuDatepicker();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,14 +59,21 @@
             this.ch1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnlChar = new System.Windows.Forms.Panel();
             this.dgwHome = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pnlNote = new System.Windows.Forms.Panel();
+            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.flwnlNoteList = new System.Windows.Forms.FlowLayoutPanel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pnl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnlExchanceRate.SuspendLayout();
             this.pnlUsd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,10 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ch1)).BeginInit();
             this.pnlChar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pnlNote.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl1
@@ -92,6 +100,17 @@
             this.pnl1.Size = new System.Drawing.Size(229, 156);
             this.pnl1.TabIndex = 0;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
             // pnl2
             // 
             this.pnl2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl2.BackgroundImage")));
@@ -106,6 +125,17 @@
             this.pnl2.Quality = 10;
             this.pnl2.Size = new System.Drawing.Size(229, 156);
             this.pnl2.TabIndex = 0;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(15, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
             // 
             // pnl3
             // 
@@ -122,6 +152,17 @@
             this.pnl3.Size = new System.Drawing.Size(229, 156);
             this.pnl3.TabIndex = 0;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 5;
+            this.pictureBox5.TabStop = false;
+            // 
             // pnl4
             // 
             this.pnl4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl4.BackgroundImage")));
@@ -136,6 +177,17 @@
             this.pnl4.Quality = 10;
             this.pnl4.Size = new System.Drawing.Size(229, 156);
             this.pnl4.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(15, 15);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
             // 
             // pnlExchanceRate
             // 
@@ -326,7 +378,7 @@
             this.dgwHome.GridColor = System.Drawing.Color.White;
             this.dgwHome.HeaderBgColor = System.Drawing.Color.White;
             this.dgwHome.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            this.dgwHome.Location = new System.Drawing.Point(560, 270);
+            this.dgwHome.Location = new System.Drawing.Point(560, 281);
             this.dgwHome.Name = "dgwHome";
             this.dgwHome.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -339,57 +391,95 @@
             this.dgwHome.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
             this.dgwHome.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgwHome.Size = new System.Drawing.Size(729, 436);
+            this.dgwHome.Size = new System.Drawing.Size(729, 425);
             this.dgwHome.TabIndex = 4;
             // 
-            // pictureBox3
+            // pnlNote
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.pnlNote.BackColor = System.Drawing.Color.White;
+            this.pnlNote.Controls.Add(this.bunifuSeparator4);
+            this.pnlNote.Controls.Add(this.bunifuSeparator3);
+            this.pnlNote.Controls.Add(this.bunifuSeparator2);
+            this.pnlNote.Controls.Add(this.bunifuSeparator1);
+            this.pnlNote.Controls.Add(this.flwnlNoteList);
+            this.pnlNote.Controls.Add(this.monthCalendar1);
+            this.pnlNote.Location = new System.Drawing.Point(280, 281);
+            this.pnlNote.Name = "pnlNote";
+            this.pnlNote.Size = new System.Drawing.Size(252, 425);
+            this.pnlNote.TabIndex = 5;
             // 
-            // pictureBox4
+            // bunifuSeparator4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator4.LineThickness = 5;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(-8, 21);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(20, 150);
+            this.bunifuSeparator4.TabIndex = 6;
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = true;
             // 
-            // pictureBox5
+            // bunifuSeparator3
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 5;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(234, 21);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(30, 150);
+            this.bunifuSeparator3.TabIndex = 6;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = true;
             // 
-            // pictureBox6
+            // bunifuSeparator2
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator2.LineThickness = 5;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(9, 167);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(234, 10);
+            this.bunifuSeparator2.TabIndex = 6;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator1.LineThickness = 5;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(9, -11);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(234, 35);
+            this.bunifuSeparator1.TabIndex = 6;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // flwnlNoteList
+            // 
+            this.flwnlNoteList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flwnlNoteList.Location = new System.Drawing.Point(3, 183);
+            this.flwnlNoteList.Name = "flwnlNoteList";
+            this.flwnlNoteList.Size = new System.Drawing.Size(246, 239);
+            this.flwnlNoteList.TabIndex = 1;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.BackColor = System.Drawing.Color.White;
+            this.monthCalendar1.Location = new System.Drawing.Point(9, 9);
+            this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.TitleBackColor = System.Drawing.Color.White;
+            this.monthCalendar1.TitleForeColor = System.Drawing.Color.White;
+            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.White;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlNote);
             this.Controls.Add(this.dgwHome);
             this.Controls.Add(this.pnlChar);
             this.Controls.Add(this.pnlExchanceRate);
@@ -401,9 +491,13 @@
             this.Size = new System.Drawing.Size(1347, 724);
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.pnl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnlExchanceRate.ResumeLayout(false);
             this.pnlExchanceRate.PerformLayout();
             this.pnlUsd.ResumeLayout(false);
@@ -415,10 +509,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ch1)).EndInit();
             this.pnlChar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgwHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.pnlNote.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -447,5 +538,12 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel pnlNote;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.FlowLayoutPanel flwnlNoteList;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
     }
 }

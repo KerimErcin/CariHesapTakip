@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContainerApp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnCompany = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlIndıcator = new System.Windows.Forms.Panel();
             this.btnSettings = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -56,6 +57,7 @@
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.White;
             this.pnlMenu.Controls.Add(this.pnlIndıcator);
+            this.pnlMenu.Controls.Add(this.btnCompany);
             this.pnlMenu.Controls.Add(this.btnSettings);
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Controls.Add(this.btnHome);
@@ -65,6 +67,43 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(52, 767);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // btnCompany
+            // 
+            this.btnCompany.Activecolor = System.Drawing.Color.White;
+            this.btnCompany.BackColor = System.Drawing.Color.White;
+            this.btnCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCompany.BorderRadius = 0;
+            this.btnCompany.ButtonText = "        Şirket";
+            this.btnCompany.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmMenu.SetDecoration(this.btnCompany, BunifuAnimatorNS.DecorationType.None);
+            this.btnCompany.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCompany.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btnCompany.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCompany.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCompany.Iconimage")));
+            this.btnCompany.Iconimage_right = null;
+            this.btnCompany.Iconimage_right_Selected = null;
+            this.btnCompany.Iconimage_Selected = null;
+            this.btnCompany.IconMarginLeft = 0;
+            this.btnCompany.IconMarginRight = 0;
+            this.btnCompany.IconRightVisible = true;
+            this.btnCompany.IconRightZoom = 0D;
+            this.btnCompany.IconVisible = true;
+            this.btnCompany.IconZoom = 60D;
+            this.btnCompany.IsTab = false;
+            this.btnCompany.Location = new System.Drawing.Point(0, 141);
+            this.btnCompany.Name = "btnCompany";
+            this.btnCompany.Normalcolor = System.Drawing.Color.White;
+            this.btnCompany.OnHovercolor = System.Drawing.Color.White;
+            this.btnCompany.OnHoverTextColor = System.Drawing.Color.DimGray;
+            this.btnCompany.selected = false;
+            this.btnCompany.Size = new System.Drawing.Size(208, 48);
+            this.btnCompany.TabIndex = 4;
+            this.btnCompany.Text = "        Şirket";
+            this.btnCompany.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompany.Textcolor = System.Drawing.Color.DimGray;
+            this.btnCompany.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCompany.Click += new System.EventHandler(this.btnCompany_Click);
             // 
             // pnlIndıcator
             // 
@@ -99,7 +138,7 @@
             this.btnSettings.IconVisible = true;
             this.btnSettings.IconZoom = 60D;
             this.btnSettings.IsTab = false;
-            this.btnSettings.Location = new System.Drawing.Point(0, 141);
+            this.btnSettings.Location = new System.Drawing.Point(0, 195);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Normalcolor = System.Drawing.Color.White;
             this.btnSettings.OnHovercolor = System.Drawing.Color.White;
@@ -224,22 +263,22 @@
             // 
             this.anmMenu.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.anmMenu.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.anmMenu.DefaultAnimation = animation2;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.anmMenu.DefaultAnimation = animation3;
             // 
             // pnlContainer
             // 
@@ -249,7 +288,6 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1347, 724);
             this.pnlContainer.TabIndex = 2;
-            this.pnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContainer_Paint);
             // 
             // ContainerApp
             // 
@@ -285,5 +323,6 @@
         private BunifuAnimatorNS.BunifuTransition anmMenu;
         private System.Windows.Forms.Panel pnlContainer;
         private Bunifu.Framework.UI.BunifuImageButton btnExit;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCompany;
     }
 }
