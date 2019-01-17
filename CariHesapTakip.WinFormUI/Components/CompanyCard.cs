@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CariHesapTakip.WinFormUI.ControlClass;
 
 namespace CariHesapTakip.WinFormUI.Components
 {
     public partial class CompanyCard : UserControl
     {
+        CompanyCardInfo companyCard = new CompanyCardInfo();
+
         public CompanyCard()
         {
             InitializeComponent();
@@ -24,10 +27,14 @@ namespace CariHesapTakip.WinFormUI.Components
             pnlBackColor.GradientTopLeft = green;
             pnlBackColor.GradientTopRight = red;
         }
-        
+
         private void CompanyCard_Load(object sender, EventArgs e)
         {
-
+            lblId.Text = companyCard.id.ToString();
+            txtCompanyName.Text = companyCard.CompanyName;
+            txtGsm.Text = companyCard.Gsm.ToString();
+            txtPhone.Text = companyCard.Telephone.ToString();
+            txtMail.Text = companyCard.Mail;
         }
     }
 }

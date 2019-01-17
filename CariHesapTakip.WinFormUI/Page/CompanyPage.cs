@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CariHesapTakip.WinFormUI.Components;
+using CariHesapTakip.WinFormUI.ControlClass;
 
 namespace CariHesapTakip.WinFormUI.Page
 {
@@ -22,7 +23,6 @@ namespace CariHesapTakip.WinFormUI.Page
         {
             CompanyCard companyCard = new CompanyCard();
             flwContainer.Controls.Add(companyCard);
-
         }
 
         private void CompanyPage_Load(object sender, EventArgs e)

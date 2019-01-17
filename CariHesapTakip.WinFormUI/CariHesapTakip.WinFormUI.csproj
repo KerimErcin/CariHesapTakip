@@ -75,6 +75,7 @@
     <Compile Include="Components\CompanyCard.Designer.cs">
       <DependentUpon>CompanyCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlClass\CompanyCardInfo.cs" />
     <Compile Include="ControlClass\ControlAndSettings.cs" />
     <Compile Include="ControlClass\DgwDesing.cs" />
     <Compile Include="Form\ExcaptionMail.cs">
