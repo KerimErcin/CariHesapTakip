@@ -108,6 +108,12 @@
     <Compile Include="Page\LoginAndSignUp.Designer.cs">
       <DependentUpon>LoginAndSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\SettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page\StartPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     <EmbeddedResource Include="Page\LoginAndSignUp.resx">
       <DependentUpon>LoginAndSignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\SettingsPage.resx">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Page\StartPage.resx">
       <DependentUpon>StartPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +163,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -178,6 +188,9 @@
       <Project>{B543B4DF-59C6-462F-BEE4-0BFEBEB3D074}</Project>
       <Name>CariHesapTakip.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_512px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

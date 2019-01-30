@@ -21,6 +21,7 @@ namespace CariHesapTakip.WinFormUI
 
         HomePage homePage = new HomePage();
         CompanyPage companyPage = new CompanyPage();
+        SettingsPage settingsPage = new SettingsPage();
 
         private void ContainerApp_Load(object sender, EventArgs e)
         {
@@ -70,6 +71,8 @@ namespace CariHesapTakip.WinFormUI
         {
             //Ayarlar Penceresi
             SelectIndicator(sender);
+            pnlContainer.Controls.Clear();
+            pnlContainer.Controls.Add(settingsPage);
         }
 
         private void btnHome_Click(object sender, EventArgs e)

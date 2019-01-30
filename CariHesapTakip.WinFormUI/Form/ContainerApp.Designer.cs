@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContainerApp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnCompany = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlIndıcator = new System.Windows.Forms.Panel();
+            this.btnCompany = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSettings = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -68,13 +68,23 @@
             this.pnlMenu.Size = new System.Drawing.Size(52, 767);
             this.pnlMenu.TabIndex = 0;
             // 
+            // pnlIndıcator
+            // 
+            this.pnlIndıcator.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pnlIndıcator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
+            this.anmMenu.SetDecoration(this.pnlIndıcator, BunifuAnimatorNS.DecorationType.None);
+            this.pnlIndıcator.Location = new System.Drawing.Point(45, 87);
+            this.pnlIndıcator.Name = "pnlIndıcator";
+            this.pnlIndıcator.Size = new System.Drawing.Size(7, 48);
+            this.pnlIndıcator.TabIndex = 2;
+            // 
             // btnCompany
             // 
             this.btnCompany.Activecolor = System.Drawing.Color.White;
             this.btnCompany.BackColor = System.Drawing.Color.White;
             this.btnCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompany.BorderRadius = 0;
-            this.btnCompany.ButtonText = "        Şirket";
+            this.btnCompany.ButtonText = "        Kişiler";
             this.btnCompany.Cursor = System.Windows.Forms.Cursors.Hand;
             this.anmMenu.SetDecoration(this.btnCompany, BunifuAnimatorNS.DecorationType.None);
             this.btnCompany.DisabledColor = System.Drawing.Color.Gray;
@@ -99,21 +109,11 @@
             this.btnCompany.selected = false;
             this.btnCompany.Size = new System.Drawing.Size(208, 48);
             this.btnCompany.TabIndex = 4;
-            this.btnCompany.Text = "        Şirket";
+            this.btnCompany.Text = "        Kişiler";
             this.btnCompany.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCompany.Textcolor = System.Drawing.Color.DimGray;
             this.btnCompany.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCompany.Click += new System.EventHandler(this.btnCompany_Click);
-            // 
-            // pnlIndıcator
-            // 
-            this.pnlIndıcator.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pnlIndıcator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            this.anmMenu.SetDecoration(this.pnlIndıcator, BunifuAnimatorNS.DecorationType.None);
-            this.pnlIndıcator.Location = new System.Drawing.Point(45, 87);
-            this.pnlIndıcator.Name = "pnlIndıcator";
-            this.pnlIndıcator.Size = new System.Drawing.Size(7, 48);
-            this.pnlIndıcator.TabIndex = 2;
             // 
             // btnSettings
             // 
@@ -263,22 +263,22 @@
             // 
             this.anmMenu.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.anmMenu.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.anmMenu.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.anmMenu.DefaultAnimation = animation1;
             // 
             // pnlContainer
             // 

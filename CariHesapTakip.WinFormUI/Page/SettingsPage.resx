@@ -117,8 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Error_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Error_512px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIwAAAAvCAYAAAAxSCJ+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVHhe7ZzZqoMwAAXv/3+tu+KWywlNQY3Lea0zMC8t
+        7UuGLGD8K4oiID6VYNCSYNCSYNCSYNCSYNDyNpi2bcM0TWGe57Cua4DfQ+Oq8dU4d10XyrLMtiBPg2ma
+        Jv4RkbyLNOYKJ9fFIRjVNY4jobwcjb9mnf1sswlGXy7L8vkJQIg9VFWVD0YzC8AezTSHYNKeBSDHMAzb
+        YIgFrlAfWppiMNoREwzcoVkmBqPzN8Ad2gDHYDgZwVNiMCxH8JQYDMBTCAYsCAYsCAYsCAYsCAYsCAYs
+        CAYsCAYsCAYsCAYsCAYsCAYsCAYsCAYsYjA8DwNPicHoGgHAHd9HNPu+/3wEcI7urcVgdH2AZQmuUB96
+        MUMMRuoKAcAZulmiTr7BSPYykEOzS7qUvwmGpQn2qAddo06NbIKRdV3H3TDhwD4WeQgmqT0N0bwTjbv2
+        LLk3UZ0GI1UXLxd6DykUnYZyPcjLYBD3EgxaEgxaEgxaEgwaFuEfmsBIFyqeV4cAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIwAAAAvCAYAAAAxSCJ+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVHhe7ZzZqoMwAAXv/3+tu+KWywlNQY3Lea0zMC8t
+        7UuGLGD8K4oiID6VYNCSYNCSYNCSYNCSYNDyNpi2bcM0TWGe57Cua4DfQ+Oq8dU4d10XyrLMtiBPg2ma
+        Jv4RkbyLNOYKJ9fFIRjVNY4jobwcjb9mnf1sswlGXy7L8vkJQIg9VFWVD0YzC8AezTSHYNKeBSDHMAzb
+        YIgFrlAfWppiMNoREwzcoVkmBqPzN8Ad2gDHYDgZwVNiMCxH8JQYDMBTCAYsCAYsCAYsCAYsCAYsCAYs
+        CAYsCAYsCAYsCAYsCAYsCAYsCAYsCAYsYjA8DwNPicHoGgHAHd9HNPu+/3wEcI7urcVgdH2AZQmuUB96
+        MUMMRuoKAcAZulmiTr7BSPYykEOzS7qUvwmGpQn2qAddo06NbIKRdV3H3TDhwD4WeQgmqT0N0bwTjbv2
+        LLk3UZ0GI1UXLxd6DykUnYZyPcjLYBD3EgxaEgxaEgxaEgwaFuEfmsBIFyqeV4cAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bunifuThinButton23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIwAAAAvCAYAAAAxSCJ+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVHhe7ZzZqoMwAAXv/3+tu+KWywlNQY3Lea0zMC8t
+        7UuGLGD8K4oiID6VYNCSYNCSYNCSYNCSYNDyNpi2bcM0TWGe57Cua4DfQ+Oq8dU4d10XyrLMtiBPg2ma
+        Jv4RkbyLNOYKJ9fFIRjVNY4jobwcjb9mnf1sswlGXy7L8vkJQIg9VFWVD0YzC8AezTSHYNKeBSDHMAzb
+        YIgFrlAfWppiMNoREwzcoVkmBqPzN8Ad2gDHYDgZwVNiMCxH8JQYDMBTCAYsCAYsCAYsCAYsCAYsCAYs
+        CAYsCAYsCAYsCAYsCAYsCAYsCAYsCAYsYjA8DwNPicHoGgHAHd9HNPu+/3wEcI7urcVgdH2AZQmuUB96
+        MUMMRuoKAcAZulmiTr7BSPYykEOzS7qUvwmGpQn2qAddo06NbIKRdV3H3TDhwD4WeQgmqT0N0bwTjbv2
+        LLk3UZ0GI1UXLxd6DykUnYZyPcjLYBD3EgxaEgxaEgxaEgwaFuEfmsBIFyqeV4cAAAAASUVORK5CYII=
+</value>
   </data>
 </root>

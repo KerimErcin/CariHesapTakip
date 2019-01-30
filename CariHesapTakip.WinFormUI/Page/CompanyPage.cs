@@ -21,8 +21,8 @@ namespace CariHesapTakip.WinFormUI.Page
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CompanyCard companyCard = new CompanyCard();
-            flwContainer.Controls.Add(companyCard);
+            //CompanyCard companyCard = new CompanyCard();
+            //flwContainer.Controls.Add(companyCard);
         }
 
         private void CompanyPage_Load(object sender, EventArgs e)
