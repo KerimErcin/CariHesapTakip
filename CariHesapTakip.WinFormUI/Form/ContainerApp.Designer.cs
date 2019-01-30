@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContainerApp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlMenu = new System.Windows.Forms.Panel();
@@ -81,7 +81,7 @@
             // btnCompany
             // 
             this.btnCompany.Activecolor = System.Drawing.Color.White;
-            this.btnCompany.BackColor = System.Drawing.Color.White;
+            this.btnCompany.BackColor = System.Drawing.Color.Transparent;
             this.btnCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompany.BorderRadius = 0;
             this.btnCompany.ButtonText = "        Kişiler";
@@ -103,7 +103,7 @@
             this.btnCompany.IsTab = false;
             this.btnCompany.Location = new System.Drawing.Point(0, 141);
             this.btnCompany.Name = "btnCompany";
-            this.btnCompany.Normalcolor = System.Drawing.Color.White;
+            this.btnCompany.Normalcolor = System.Drawing.Color.Transparent;
             this.btnCompany.OnHovercolor = System.Drawing.Color.White;
             this.btnCompany.OnHoverTextColor = System.Drawing.Color.DimGray;
             this.btnCompany.selected = false;
@@ -118,7 +118,7 @@
             // btnSettings
             // 
             this.btnSettings.Activecolor = System.Drawing.Color.White;
-            this.btnSettings.BackColor = System.Drawing.Color.White;
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
             this.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSettings.BorderRadius = 0;
             this.btnSettings.ButtonText = "        Ayarlar";
@@ -140,7 +140,7 @@
             this.btnSettings.IsTab = false;
             this.btnSettings.Location = new System.Drawing.Point(0, 195);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Normalcolor = System.Drawing.Color.White;
+            this.btnSettings.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSettings.OnHovercolor = System.Drawing.Color.White;
             this.btnSettings.OnHoverTextColor = System.Drawing.Color.DimGray;
             this.btnSettings.selected = false;
@@ -155,7 +155,7 @@
             // btnMenu
             // 
             this.btnMenu.Activecolor = System.Drawing.Color.White;
-            this.btnMenu.BackColor = System.Drawing.Color.White;
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMenu.BorderRadius = 0;
             this.btnMenu.ButtonText = "        Menü";
@@ -177,7 +177,7 @@
             this.btnMenu.IsTab = false;
             this.btnMenu.Location = new System.Drawing.Point(0, 3);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Normalcolor = System.Drawing.Color.White;
+            this.btnMenu.Normalcolor = System.Drawing.Color.Transparent;
             this.btnMenu.OnHovercolor = System.Drawing.Color.White;
             this.btnMenu.OnHoverTextColor = System.Drawing.Color.DimGray;
             this.btnMenu.selected = false;
@@ -191,8 +191,8 @@
             // 
             // btnHome
             // 
-            this.btnHome.Activecolor = System.Drawing.Color.White;
-            this.btnHome.BackColor = System.Drawing.Color.White;
+            this.btnHome.Activecolor = System.Drawing.Color.Transparent;
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.BorderRadius = 0;
             this.btnHome.ButtonText = "        Anasayfa";
@@ -214,7 +214,7 @@
             this.btnHome.IsTab = false;
             this.btnHome.Location = new System.Drawing.Point(0, 87);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Normalcolor = System.Drawing.Color.White;
+            this.btnHome.Normalcolor = System.Drawing.Color.Transparent;
             this.btnHome.OnHovercolor = System.Drawing.Color.White;
             this.btnHome.OnHoverTextColor = System.Drawing.Color.DimGray;
             this.btnHome.selected = false;
@@ -240,7 +240,7 @@
             // btnExit
             // 
             this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnExit.BackColor = System.Drawing.Color.White;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.anmMenu.SetDecoration(this.btnExit, BunifuAnimatorNS.DecorationType.None);
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageActive = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageActive")));
@@ -263,22 +263,22 @@
             // 
             this.anmMenu.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.anmMenu.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.anmMenu.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 1F;
+            this.anmMenu.DefaultAnimation = animation4;
             // 
             // pnlContainer
             // 

@@ -16,7 +16,12 @@ namespace CariHesapTakip.WinFormUI
         public ContainerApp()
         {
             InitializeComponent();
-
+            //if (Properties.Settings.Default.themeOnOff == true)
+            //{
+            //    pnlContainer.BackColor = Properties.Settings.Default.darkMode_Bg;
+            //    pnlHeader.BackColor = Properties.Settings.Default.darkMode_Fr;
+            //    pnlMenu.BackColor = Properties.Settings.Default.darkMode_Fr;
+            //}
         }
 
         HomePage homePage = new HomePage();

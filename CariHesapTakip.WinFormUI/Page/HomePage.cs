@@ -30,6 +30,18 @@ namespace CariHesapTakip.WinFormUI.Page
             Bunifu.Framework.Lib.Elipse.Apply(pnlChar, 5);
             Bunifu.Framework.Lib.Elipse.Apply(dgwHome, 5);
             Bunifu.Framework.Lib.Elipse.Apply(pnlNote, 5);
+            //if (Properties.Settings.Default.themeOnOff == true)
+            //{
+            //    pnlExchanceRate.BackColor = Properties.Settings.Default.darkMode_Fr;
+            //    ch1.BackColor = Properties.Settings.Default.darkMode_Fr;
+
+            //    pnlNote.BackColor = Properties.Settings.Default.darkMode_Fr;
+            //    bunifuSeparator1.LineColor = Properties.Settings.Default.darkMode_Fr;
+            //    bunifuSeparator2.LineColor = Properties.Settings.Default.darkMode_Fr;
+            //    bunifuSeparator3.LineColor = Properties.Settings.Default.darkMode_Fr;
+            //    bunifuSeparator4.LineColor = Properties.Settings.Default.darkMode_Fr;
+
+            //}
         }
 
         ControlAndSettings _controlAndSettings = new ControlAndSettings();

@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CariHesapTakip.WinFormUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="darkMode_Fr" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">47, 58, 79</Value>
+    </Setting>
+    <Setting Name="darkMode_Bg" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 44, 61</Value>
+    </Setting>
+    <Setting Name="themeOnOff" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="whiteMode_Fr" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="whiteMod_Bg" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">240, 240, 240</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
