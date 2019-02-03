@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\BorcluFirmaContext.cs" />
+    <Compile Include="Concrete\BorcluFirmaDal.cs" />
     <Compile Include="Concrete\FirmaBilgileriContext.cs" />
     <Compile Include="Concrete\FirmaBilgileriDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
