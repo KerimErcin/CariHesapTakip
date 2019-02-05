@@ -12,7 +12,6 @@ namespace CariHesapTakip.Entities.Concrete
         public string FirmaUnvani { get; set; }
         public string FirmaYetkili { get; set; }
         public int FirmaTelefon { get; set; }
-        public int FirmaFax { get; set; }
         public int FirmaGsm { get; set; }
         public string FirmaAdres { get; set; }
         public string FirmaIl { get; set; }

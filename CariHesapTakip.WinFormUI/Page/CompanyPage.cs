@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CariHesapTakip.WinFormUI.Components;
 using CariHesapTakip.WinFormUI.ControlClass;
+using CariHesapTakip.Business.Concrete;
 
 namespace CariHesapTakip.WinFormUI.Page
 {
@@ -17,7 +18,11 @@ namespace CariHesapTakip.WinFormUI.Page
         public CompanyPage()
         {
             InitializeComponent();
+            Bunifu.Framework.Lib.Elipse.Apply(dgwCompany, 5);
         }
+
+        BorcluFirmaManager _borcluFirmaManager = new BorcluFirmaManager();
+        DgwDesing _dgwDesing = new DgwDesing();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -27,7 +32,8 @@ namespace CariHesapTakip.WinFormUI.Page
 
         private void CompanyPage_Load(object sender, EventArgs e)
         {
-
+            dgwCompany.DataSource = _borcluFirmaManager.GetAll();
+            _dgwDesing.dtwCompany(dgwCompany);
         }
     }
 }

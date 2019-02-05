@@ -45,7 +45,7 @@ namespace CariHesapTakip.WinFormUI.Page
         }
 
         ControlAndSettings _controlAndSettings = new ControlAndSettings();
-        FirmaBilgileriManager _firmaBilgileriManager = new FirmaBilgileriManager();
+        BorcluFirmaManager _borcluFirmaManager = new BorcluFirmaManager();
         DgwDesing _dgwDesing = new DgwDesing();
 
         private void HomePage_Load(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace CariHesapTakip.WinFormUI.Page
             lblUsd.Text = _controlAndSettings.ExchanceUSD();
             lblEuro.Text = _controlAndSettings.ExchanceEuro();
             bgWorkerChar.RunWorkerAsync();
-            dgwHome.DataSource = _firmaBilgileriManager.GetAll();
+            dgwHome.DataSource = _borcluFirmaManager.GetAll();
             _dgwDesing.dtwHome(dgwHome);
         }
 
