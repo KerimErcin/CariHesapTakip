@@ -11,8 +11,8 @@ namespace CariHesapTakip.Entities.Concrete
         public int Id { get; set; }
         public string FirmaUnvani { get; set; }
         public string FirmaYetkili { get; set; }
-        public int FirmaTelefon { get; set; }
-        public int FirmaGsm { get; set; }
+        public string FirmaTelefon { get; set; }
+        public string FirmaGsm { get; set; }
         public string FirmaAdres { get; set; }
         public string FirmaIl { get; set; }
         public string FirmaIlce { get; set; }
@@ -20,7 +20,7 @@ namespace CariHesapTakip.Entities.Concrete
         public string FirmaVergiDairesi { get; set; }
         public string FirmaMail { get; set; }
         public string FirmaWeb { get; set; }    
-        public float FirmaCariLimit { get; set; }
+        public string FirmaCariLimit { get; set; }
         public string FirmaDurumu { get; set; }
     }
 }
