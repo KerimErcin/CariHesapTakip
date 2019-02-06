@@ -38,14 +38,14 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnMail = new Bunifu.Framework.UI.BunifuImageButton();
             this.dgwCompany = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwCompany)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,18 +111,19 @@
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
             // 
-            // bunifuImageButton5
+            // btnMail
             // 
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(19, 385);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(37, 37);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 3;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 10;
+            this.btnMail.BackColor = System.Drawing.Color.White;
+            this.btnMail.Image = ((System.Drawing.Image)(resources.GetObject("btnMail.Image")));
+            this.btnMail.ImageActive = null;
+            this.btnMail.Location = new System.Drawing.Point(19, 385);
+            this.btnMail.Name = "btnMail";
+            this.btnMail.Size = new System.Drawing.Size(37, 37);
+            this.btnMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMail.TabIndex = 3;
+            this.btnMail.TabStop = false;
+            this.btnMail.Zoom = 10;
+            this.btnMail.Click += new System.EventHandler(this.btnMail_Click);
             // 
             // dgwCompany
             // 
@@ -168,7 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgwCompany);
-            this.Controls.Add(this.bunifuImageButton5);
+            this.Controls.Add(this.btnMail);
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.bunifuImageButton2);
@@ -182,7 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwCompany)).EndInit();
             this.ResumeLayout(false);
 
@@ -195,7 +196,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
+        private Bunifu.Framework.UI.BunifuImageButton btnMail;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgwCompany;
     }
 }

@@ -35,5 +35,13 @@ namespace CariHesapTakip.WinFormUI.Page
             dgwCompany.DataSource = _borcluFirmaManager.GetAll();
             _dgwDesing.dtwCompany(dgwCompany);
         }
+
+        private void btnMail_Click(object sender, EventArgs e)
+        {
+            using (SendMail sendMail = new SendMail())
+            {
+                sendMail.ShowDialog();
+            }
+        }
     }
 }

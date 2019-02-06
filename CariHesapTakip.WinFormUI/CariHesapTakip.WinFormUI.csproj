@@ -128,6 +128,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\SendMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SendMail.Designer.cs">
+      <DependentUpon>SendMail.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Components\CompanyCard.resx">
       <DependentUpon>CompanyCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\ExcaptionMail.resx">
       <DependentUpon>ExcaptionMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SendMail.resx">
+      <DependentUpon>SendMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\CompanyPage.resx">
       <DependentUpon>CompanyPage.cs</DependentUpon>
