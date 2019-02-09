@@ -28,7 +28,7 @@ namespace CariHesapTakip.WinFormUI.Page
             Bunifu.Framework.Lib.Elipse.Apply(pnlUsd, 10);
             Bunifu.Framework.Lib.Elipse.Apply(pnlEuro, 10);
             Bunifu.Framework.Lib.Elipse.Apply(pnlChar, 5);
-            Bunifu.Framework.Lib.Elipse.Apply(dgwHome, 5);
+            Bunifu.Framework.Lib.Elipse.Apply(pnlDtw, 5);
             Bunifu.Framework.Lib.Elipse.Apply(pnlNote, 5);
             //if (Properties.Settings.Default.themeOnOff == true)
             //{

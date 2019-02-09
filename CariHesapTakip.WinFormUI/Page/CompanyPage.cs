@@ -18,7 +18,7 @@ namespace CariHesapTakip.WinFormUI.Page
         public CompanyPage()
         {
             InitializeComponent();
-            Bunifu.Framework.Lib.Elipse.Apply(dgwCompany, 5);
+            Bunifu.Framework.Lib.Elipse.Apply(pnlDtwBack, 5);
         }
 
         BorcluFirmaManager _borcluFirmaManager = new BorcluFirmaManager();
@@ -41,6 +41,9 @@ namespace CariHesapTakip.WinFormUI.Page
             using (SendMail sendMail = new SendMail())
             {
                 sendMail.ShowDialog();
+                //System.Windows.Media.Effects.BlurEffect myBlur = new System.Windows.Media.Effects.BlurEffect();
+                //myBlur.Radius = 5; //Set the radius for the blur - the bigger the number the better the blur
+                //this.Effect = myBlur;
             }
         }
     }

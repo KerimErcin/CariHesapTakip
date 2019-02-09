@@ -75,6 +75,12 @@
     <Compile Include="Components\CompanyCard.Designer.cs">
       <DependentUpon>CompanyCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\NoteCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\NoteCard.Designer.cs">
+      <DependentUpon>NoteCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlClass\CompanyCardInfo.cs" />
     <Compile Include="ControlClass\ControlAndSettings.cs" />
     <Compile Include="ControlClass\DgwDesing.cs" />
@@ -136,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="Components\CompanyCard.resx">
       <DependentUpon>CompanyCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\NoteCard.resx">
+      <DependentUpon>NoteCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\ContainerApp.resx">
       <DependentUpon>ContainerApp.cs</DependentUpon>

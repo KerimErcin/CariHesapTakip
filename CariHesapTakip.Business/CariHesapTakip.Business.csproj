@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Concrete\BorcluFirmaManager.cs" />
     <Compile Include="Concrete\FirmaBilgileriManager.cs" />
+    <Compile Include="Concrete\NoteManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

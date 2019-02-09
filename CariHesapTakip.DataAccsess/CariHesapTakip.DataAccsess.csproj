@@ -51,6 +51,8 @@
     <Compile Include="Concrete\BorcluFirmaDal.cs" />
     <Compile Include="Concrete\FirmaBilgileriContext.cs" />
     <Compile Include="Concrete\FirmaBilgileriDal.cs" />
+    <Compile Include="Concrete\NoteContext.cs" />
+    <Compile Include="Concrete\NoteDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

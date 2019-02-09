@@ -28,23 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlExchanceRate = new System.Windows.Forms.Panel();
             this.dtPicker = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.pnlUsd = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.lblUsd = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlEuro = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.lblEuro = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bgWorkerChar = new System.ComponentModel.BackgroundWorker();
             this.ch1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnlChar = new System.Windows.Forms.Panel();
@@ -56,25 +51,35 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.flwnlNoteList = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.pnlDtw = new System.Windows.Forms.Panel();
+            this.pnlUsd = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lblUsd = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlEuro = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.lblEuro = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnl4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnl3 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnl2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnl1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.noteCard1 = new CariHesapTakip.WinFormUI.Components.NoteCard();
             this.pnlExchanceRate.SuspendLayout();
-            this.pnlUsd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlEuro.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ch1)).BeginInit();
             this.pnlChar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwHome)).BeginInit();
             this.pnlNote.SuspendLayout();
+            this.flwnlNoteList.SuspendLayout();
+            this.pnlDtw.SuspendLayout();
+            this.pnlUsd.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlEuro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnl3.SuspendLayout();
@@ -109,6 +114,188 @@
             this.dtPicker.TabIndex = 2;
             this.dtPicker.Value = new System.DateTime(2019, 1, 13, 16, 21, 19, 0);
             this.dtPicker.onValueChanged += new System.EventHandler(this.dtPicker_onValueChanged);
+            // 
+            // bgWorkerChar
+            // 
+            this.bgWorkerChar.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorkerChar_DoWork);
+            // 
+            // ch1
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.ch1.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.ch1.Legends.Add(legend7);
+            this.ch1.Location = new System.Drawing.Point(0, 0);
+            this.ch1.Name = "ch1";
+            this.ch1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
+            series13.BackSecondaryColor = System.Drawing.Color.DeepSkyBlue;
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Color = System.Drawing.Color.Turquoise;
+            series13.Legend = "Legend1";
+            series13.MarkerBorderColor = System.Drawing.Color.Red;
+            series13.MarkerBorderWidth = 50;
+            series13.Name = "Gelir";
+            series13.ShadowColor = System.Drawing.Color.Maroon;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Legend = "Legend1";
+            series14.Name = "Gider";
+            this.ch1.Series.Add(series13);
+            this.ch1.Series.Add(series14);
+            this.ch1.Size = new System.Drawing.Size(726, 234);
+            this.ch1.TabIndex = 2;
+            this.ch1.Text = "chart1";
+            this.ch1.Click += new System.EventHandler(this.ch1_Click);
+            // 
+            // pnlChar
+            // 
+            this.pnlChar.BackColor = System.Drawing.Color.White;
+            this.pnlChar.Controls.Add(this.ch1);
+            this.pnlChar.Location = new System.Drawing.Point(560, 19);
+            this.pnlChar.Name = "pnlChar";
+            this.pnlChar.Size = new System.Drawing.Size(729, 234);
+            this.pnlChar.TabIndex = 3;
+            this.pnlChar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChar_Paint);
+            // 
+            // dgwHome
+            // 
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            this.dgwHome.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            this.dgwHome.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgwHome.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgwHome.BackgroundColor = System.Drawing.Color.White;
+            this.dgwHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgwHome.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwHome.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            this.dgwHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwHome.DefaultCellStyle = dataGridViewCellStyle33;
+            this.dgwHome.DoubleBuffered = true;
+            this.dgwHome.EnableHeadersVisualStyles = false;
+            this.dgwHome.GridColor = System.Drawing.Color.White;
+            this.dgwHome.HeaderBgColor = System.Drawing.Color.White;
+            this.dgwHome.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
+            this.dgwHome.Location = new System.Drawing.Point(6, 6);
+            this.dgwHome.Name = "dgwHome";
+            this.dgwHome.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwHome.RowHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            this.dgwHome.RowsDefaultCellStyle = dataGridViewCellStyle35;
+            this.dgwHome.Size = new System.Drawing.Size(717, 412);
+            this.dgwHome.TabIndex = 4;
+            // 
+            // pnlNote
+            // 
+            this.pnlNote.BackColor = System.Drawing.Color.White;
+            this.pnlNote.Controls.Add(this.bunifuSeparator4);
+            this.pnlNote.Controls.Add(this.bunifuSeparator3);
+            this.pnlNote.Controls.Add(this.bunifuSeparator2);
+            this.pnlNote.Controls.Add(this.bunifuSeparator1);
+            this.pnlNote.Controls.Add(this.flwnlNoteList);
+            this.pnlNote.Controls.Add(this.monthCalendar1);
+            this.pnlNote.Location = new System.Drawing.Point(280, 233);
+            this.pnlNote.Name = "pnlNote";
+            this.pnlNote.Size = new System.Drawing.Size(252, 473);
+            this.pnlNote.TabIndex = 5;
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator4.LineThickness = 5;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(-8, 21);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(20, 150);
+            this.bunifuSeparator4.TabIndex = 6;
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = true;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 5;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(234, 21);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(30, 150);
+            this.bunifuSeparator3.TabIndex = 6;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = true;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator2.LineThickness = 5;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(9, 167);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(234, 10);
+            this.bunifuSeparator2.TabIndex = 6;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator1.LineThickness = 5;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(9, -11);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(234, 35);
+            this.bunifuSeparator1.TabIndex = 6;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
+            // 
+            // flwnlNoteList
+            // 
+            this.flwnlNoteList.Controls.Add(this.noteCard1);
+            this.flwnlNoteList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flwnlNoteList.Location = new System.Drawing.Point(3, 183);
+            this.flwnlNoteList.Name = "flwnlNoteList";
+            this.flwnlNoteList.Size = new System.Drawing.Size(246, 287);
+            this.flwnlNoteList.TabIndex = 1;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.BackColor = System.Drawing.Color.White;
+            this.monthCalendar1.Location = new System.Drawing.Point(9, 9);
+            this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.TitleBackColor = System.Drawing.Color.White;
+            this.monthCalendar1.TitleForeColor = System.Drawing.Color.White;
+            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.White;
+            // 
+            // pnlDtw
+            // 
+            this.pnlDtw.BackColor = System.Drawing.Color.White;
+            this.pnlDtw.Controls.Add(this.dgwHome);
+            this.pnlDtw.Location = new System.Drawing.Point(560, 281);
+            this.pnlDtw.Name = "pnlDtw";
+            this.pnlDtw.Size = new System.Drawing.Size(729, 425);
+            this.pnlDtw.TabIndex = 6;
             // 
             // pnlUsd
             // 
@@ -187,170 +374,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-            // 
-            // bgWorkerChar
-            // 
-            this.bgWorkerChar.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorkerChar_DoWork);
-            // 
-            // ch1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.ch1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.ch1.Legends.Add(legend3);
-            this.ch1.Location = new System.Drawing.Point(0, 0);
-            this.ch1.Name = "ch1";
-            this.ch1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalLeft;
-            series5.BackSecondaryColor = System.Drawing.Color.DeepSkyBlue;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Color = System.Drawing.Color.Turquoise;
-            series5.Legend = "Legend1";
-            series5.MarkerBorderColor = System.Drawing.Color.Red;
-            series5.MarkerBorderWidth = 50;
-            series5.Name = "Gelir";
-            series5.ShadowColor = System.Drawing.Color.Maroon;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "Gider";
-            this.ch1.Series.Add(series5);
-            this.ch1.Series.Add(series6);
-            this.ch1.Size = new System.Drawing.Size(726, 234);
-            this.ch1.TabIndex = 2;
-            this.ch1.Text = "chart1";
-            this.ch1.Click += new System.EventHandler(this.ch1_Click);
-            // 
-            // pnlChar
-            // 
-            this.pnlChar.BackColor = System.Drawing.Color.White;
-            this.pnlChar.Controls.Add(this.ch1);
-            this.pnlChar.Location = new System.Drawing.Point(560, 19);
-            this.pnlChar.Name = "pnlChar";
-            this.pnlChar.Size = new System.Drawing.Size(729, 234);
-            this.pnlChar.TabIndex = 3;
-            this.pnlChar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChar_Paint);
-            // 
-            // dgwHome
-            // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgwHome.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgwHome.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgwHome.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgwHome.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgwHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgwHome.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwHome.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgwHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwHome.DoubleBuffered = true;
-            this.dgwHome.EnableHeadersVisualStyles = false;
-            this.dgwHome.GridColor = System.Drawing.Color.White;
-            this.dgwHome.HeaderBgColor = System.Drawing.Color.White;
-            this.dgwHome.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(231)))), ((int)(((byte)(224)))));
-            this.dgwHome.Location = new System.Drawing.Point(560, 281);
-            this.dgwHome.Name = "dgwHome";
-            this.dgwHome.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwHome.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            this.dgwHome.RowsDefaultCellStyle = dataGridViewCellStyle12;
-            this.dgwHome.Size = new System.Drawing.Size(729, 425);
-            this.dgwHome.TabIndex = 4;
-            // 
-            // pnlNote
-            // 
-            this.pnlNote.BackColor = System.Drawing.Color.White;
-            this.pnlNote.Controls.Add(this.bunifuSeparator4);
-            this.pnlNote.Controls.Add(this.bunifuSeparator3);
-            this.pnlNote.Controls.Add(this.bunifuSeparator2);
-            this.pnlNote.Controls.Add(this.bunifuSeparator1);
-            this.pnlNote.Controls.Add(this.flwnlNoteList);
-            this.pnlNote.Controls.Add(this.monthCalendar1);
-            this.pnlNote.Location = new System.Drawing.Point(280, 233);
-            this.pnlNote.Name = "pnlNote";
-            this.pnlNote.Size = new System.Drawing.Size(252, 473);
-            this.pnlNote.TabIndex = 5;
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator4.LineThickness = 5;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(-8, 21);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(20, 150);
-            this.bunifuSeparator4.TabIndex = 6;
-            this.bunifuSeparator4.Transparency = 255;
-            this.bunifuSeparator4.Vertical = true;
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator3.LineThickness = 5;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(234, 21);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(30, 150);
-            this.bunifuSeparator3.TabIndex = 6;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = true;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator2.LineThickness = 5;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(9, 167);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(234, 10);
-            this.bunifuSeparator2.TabIndex = 6;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator1.LineThickness = 5;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(9, -11);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(234, 35);
-            this.bunifuSeparator1.TabIndex = 6;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
-            // flwnlNoteList
-            // 
-            this.flwnlNoteList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flwnlNoteList.Location = new System.Drawing.Point(3, 183);
-            this.flwnlNoteList.Name = "flwnlNoteList";
-            this.flwnlNoteList.Size = new System.Drawing.Size(246, 287);
-            this.flwnlNoteList.TabIndex = 1;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.BackColor = System.Drawing.Color.White;
-            this.monthCalendar1.Location = new System.Drawing.Point(9, 9);
-            this.monthCalendar1.MaxSelectionCount = 1;
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
-            this.monthCalendar1.TitleBackColor = System.Drawing.Color.White;
-            this.monthCalendar1.TitleForeColor = System.Drawing.Color.White;
-            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.White;
             // 
             // pnl4
             // 
@@ -431,6 +454,18 @@
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(21, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Kayıtlı Şirket Sayısı";
+            // 
             // pnl1
             // 
             this.pnl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl1.BackgroundImage")));
@@ -470,24 +505,19 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Toplam Alacak";
             // 
-            // label3
+            // noteCard1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(21, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Kayıtlı Şirket Sayısı";
+            this.noteCard1.Location = new System.Drawing.Point(3, 3);
+            this.noteCard1.Name = "noteCard1";
+            this.noteCard1.Size = new System.Drawing.Size(240, 93);
+            this.noteCard1.TabIndex = 0;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlDtw);
             this.Controls.Add(this.pnlNote);
-            this.Controls.Add(this.dgwHome);
             this.Controls.Add(this.pnlChar);
             this.Controls.Add(this.pnlExchanceRate);
             this.Controls.Add(this.pnl4);
@@ -498,16 +528,18 @@
             this.Size = new System.Drawing.Size(1347, 724);
             this.Load += new System.EventHandler(this.HomePage_Load);
             this.pnlExchanceRate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ch1)).EndInit();
+            this.pnlChar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwHome)).EndInit();
+            this.pnlNote.ResumeLayout(false);
+            this.flwnlNoteList.ResumeLayout(false);
+            this.pnlDtw.ResumeLayout(false);
             this.pnlUsd.ResumeLayout(false);
             this.pnlUsd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlEuro.ResumeLayout(false);
             this.pnlEuro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ch1)).EndInit();
-            this.pnlChar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwHome)).EndInit();
-            this.pnlNote.ResumeLayout(false);
             this.pnl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnl3.ResumeLayout(false);
@@ -553,5 +585,7 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlDtw;
+        private Components.NoteCard noteCard1;
     }
 }
